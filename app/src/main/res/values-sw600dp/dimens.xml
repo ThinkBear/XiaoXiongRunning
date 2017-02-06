@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- 界面字体大小 -->
+    
+    <dimen name="font_size_a">18sp</dimen>
+    <dimen name="font_size_b">19sp</dimen>
+    <dimen name="font_size_c">21sp</dimen>
+    <dimen name="font_size_d">23sp</dimen>
+    <dimen name="font_size_e">25sp</dimen>
+    <dimen name="font_size_f">28sp</dimen>
+    <dimen name="font_size_g">31sp</dimen>
+
+     <!-- 边距大小 -->
+    <dimen name="padd_small">6dp</dimen>
+    <dimen name="padd_among">9dp</dimen>
+    <dimen name="padd_big">13dp</dimen>
+    
+    <!-- logo图标大小 -->
+    <dimen name="logo_big">200dp</dimen>
+
+</resources>

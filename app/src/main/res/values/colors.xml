@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 透明黑色 -->
+
+    <color name="black11">#11000000</color>
+    <color name="black33">#33000000</color>
+    <color name="black55">#55000000</color>
+    <color name="black88">#88000000</color>
+    <color name="blackbb">#bb000000</color>
+
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 透明白色 -->
+    <color name="white33">#33FFFFFF</color>
+    <color name="white55">#55FFFFFF</color>
+    <color name="white88">#88FFFFFF</color>
+    <color name="whitebb">#bbFFFFFF</color>
+
+    <!-- 淡蓝色 -->
+    <color name="lightblue">#6aa4e5</color>
+    <!-- 蓝色 -->
+    <color name="blue">#1176e8</color>
+    <!-- 透明蓝色 -->
+    <color name="blue11">#111176e8</color>
+    <color name="blue22">#221176e8</color>
+    <color name="blue33">#331176e8</color>
+    <color name="blue55">#551176e8</color>
+    <color name="blue88">#881176e8</color>
+    <color name="bluebb">#bb1176e8</color>
+
+    <!-- 红色 -->
+    <color name="red">#ff0000</color>
+    <!-- 淡红色 -->
+    <color name="lightred">#ff8e8e</color>
+    <!-- 透明红色 -->
+    <color name="red11">#11ff0000</color>
+    <color name="red33">#33ff0000</color>
+    <color name="red55">#55ff0000</color>
+    <color name="red88">#88ff0000</color>
+    <color name="redbb">#bbff0000</color>
+
+    <color name="paintColor">#406af4</color>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">小熊Run</string>
+    <string name="night">夜间</string>
+	<string name="day">白天</string>
+	<string name="pause">暂停</string>
+	<string name="conti">继续</string>
+	<string name="one">冒险级</string>
+	<string name="two">王者级</string>
+	<string name="three">地狱级</string>
+	<string name="replay">再来一遍</string>
+	<string name="backMenu">返回主菜单</string>
+	<string name="exit">退出</string>
+</resources>
