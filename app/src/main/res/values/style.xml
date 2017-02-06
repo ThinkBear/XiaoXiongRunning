@@ -2,17 +2,14 @@
 <resources>
 
     <style name="gameTypeTheme">
-        <item name="android:layout_width">wrap_content</item>
-    	<item name="android:layout_height">wrap_content</item>
-    	<item name="android:paddingLeft">@dimen/padd_big</item>
-    	<item name="android:paddingRight">@dimen/padd_big</item>
-    	<item name="android:paddingTop">@dimen/padd_small</item>
-    	<item name="android:paddingBottom">@dimen/padd_small</item>
-    	<item name="android:layout_margin">@dimen/padd_big</item>
-    	<item name="android:background">@drawable/pressed_bg_bluebb</item>
-    	<item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+		<item name="android:layout_weight">1</item>
+    	<item name="android:layout_height">match_parent</item>
+		<item name="android:layout_margin">@dimen/padd_small</item>
     	<item name="android:textSize">@dimen/font_size_g</item>
     	<item name="android:textStyle">bold</item>
+		<item name="android:gravity">center</item>
+		<item name="android:background">@drawable/bg_button</item>
     </style>
 
 </resources>

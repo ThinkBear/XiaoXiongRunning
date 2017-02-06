@@ -2,46 +2,65 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:gravity="center"
-    android:padding="@dimen/padd_big"
-    android:background="@color/black11"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:padding="@dimen/padd_big">
 
-    <ImageView
-        android:id="@+id/over"
-        android:layout_width="@dimen/logo_big"
-        android:layout_height="@dimen/logo_big"
-        android:background="@anim/over" />
-
-    <ScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/padd_big" >
+        android:layout_height="0px"
+        android:layout_weight="1.5">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical" >
+        <ImageView
+            android:id="@+id/over"
+            android:layout_width="@dimen/logo_big"
+            android:layout_height="@dimen/logo_big"
+            android:layout_centerInParent="true"
+            android:background="@anim/over" />
 
-            <TextView
-                android:id="@+id/score"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/padd_big" 
-                android:layout_margin="@dimen/padd_big"
-                android:background="@drawable/bg_white88_corners"/>
+    </RelativeLayout>
 
-            <TextView
-                android:id="@+id/replay"
-                style="@style/gameTypeTheme"
-                android:text="@string/replay" />
+    <TextView
+        android:id="@+id/score1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black11"
+        android:layout_margin="@dimen/padd_big"
+        android:padding="@dimen/padd_big"
+        android:textSize="@dimen/font_size_c"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
 
-            <TextView
-                android:id="@+id/backMenu"
-                style="@style/gameTypeTheme"
-                android:text="@string/backMenu" />
-        </LinearLayout>
-    </ScrollView>
+    <TextView
+        android:id="@+id/score2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black11"
+        android:layout_margin="@dimen/padd_big"
+        android:padding="@dimen/padd_big"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/font_size_d"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginBottom="@dimen/padd_big"
+        android:layout_marginTop="@dimen/padd_big"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/replay"
+            style="@style/gameTypeTheme"
+            android:text="@string/replay" />
+
+        <TextView
+            android:id="@+id/backMenu"
+            style="@style/gameTypeTheme"
+            android:text="@string/backMenu" />
+    </LinearLayout>
+
 
 </LinearLayout>

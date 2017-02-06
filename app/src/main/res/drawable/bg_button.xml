@@ -5,19 +5,15 @@
     <!-- 点击背景 -->
     <item android:state_pressed="true">
         <shape>
-            <solid android:color="@color/red" />
+            <solid android:color="@color/black33" />
 
-             <corners
-                android:radius="@dimen/padd_big" />
         </shape>
     </item>
     <!-- 默认背景 -->
     <item>
         <shape>
-            <solid android:color="@color/redbb" />
+            <solid android:color="@color/black11" />
 
-            <corners
-                android:radius="@dimen/padd_big" />
         </shape>
     </item>
 

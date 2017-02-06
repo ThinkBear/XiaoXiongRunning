@@ -2,59 +2,63 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black11"
+    android:background="@color/white"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="@dimen/padd_big" >
+    android:padding="@dimen/padd_big">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="@dimen/logo_big"
-        android:layout_height="@dimen/logo_big"
-        android:background="@anim/logo" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1.5">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/logo_big"
+            android:layout_height="@dimen/logo_big"
+            android:layout_centerInParent="true"
+            android:background="@anim/logo" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginBottom="@dimen/padd_big"
+        android:layout_marginTop="@dimen/padd_big"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/one"
+            style="@style/gameTypeTheme"
+            android:text="@string/one"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/two"
+            style="@style/gameTypeTheme"
+            android:text="@string/two"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/three"
+            style="@style/gameTypeTheme"
+            android:text="@string/three"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/padd_big"
-        android:background="@drawable/bg_white88_corners"
-        android:padding="@dimen/padd_small"
-        android:text="@string/app_name"
-        android:textColor="@color/bluebb"
-        android:textSize="@dimen/font_size_c" />
-
-    <ScrollView
+        android:id="@+id/copyRight"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/padd_big" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center" >
-
-            <TextView
-                android:id="@+id/one"
-                style="@style/gameTypeTheme"
-                android:text="@string/one" />
-
-            <TextView
-                android:id="@+id/two"
-                style="@style/gameTypeTheme"
-                android:text="@string/two" />
-
-            <TextView
-                android:id="@+id/three"
-                style="@style/gameTypeTheme"
-                android:text="@string/three" />
-
-            <TextView
-                android:id="@+id/exit"
-                style="@style/gameTypeTheme"
-                android:background="@drawable/pressed_bg_redbb"
-                android:text="@string/exit" />
-        </LinearLayout>
-    </ScrollView>
-
+        android:layout_height="wrap_content"
+        android:background="@color/black11"
+        android:padding="@dimen/padd_among"
+        android:layout_margin="@dimen/padd_small"
+        android:gravity="center"
+        android:textColor="@color/bluebb"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_size_c"/>
 </LinearLayout>

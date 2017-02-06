@@ -12,30 +12,18 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_margin="@dimen/padd_big"
-            android:background="@drawable/bg_white88_corners"
-            android:padding="@dimen/padd_small"
-            android:text="©2015 Xiao Xiong"
-            android:textColor="@color/black"
-            android:textSize="@dimen/font_size_b"
-            android:textStyle="bold" />
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padd_big">
 
         <TextView
             android:id="@+id/timeStatu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/padd_big"
-            android:background="@drawable/pressed_bg_bluebb"
+            android:background="@drawable/bg_button"
             android:padding="@dimen/padd_small"
             android:text="@string/night"
-            android:textColor="@color/white"
+            android:textColor="@color/blackbb"
             android:textSize="@dimen/font_size_c"
             android:textStyle="bold" />
         
@@ -45,11 +33,10 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="@dimen/padd_big"
-            android:background="@drawable/pressed_bg_bluebb"
+            android:background="@drawable/bg_button"
             android:padding="@dimen/padd_small"
             android:text="@string/pause"
-            android:textColor="@color/white"
+            android:textColor="@color/blackbb"
             android:textSize="@dimen/font_size_c"
             android:textStyle="bold" />
     </RelativeLayout>

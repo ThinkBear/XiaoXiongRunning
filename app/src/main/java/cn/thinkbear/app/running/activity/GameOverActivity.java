@@ -30,7 +30,9 @@ import cn.thinkbear.app.running.App;
 public class GameOverActivity extends Activity {
 
 	private ImageView over = null;//游戏结束的视图对象
-	private TextView score = null;//得分详情
+	private TextView score1 = null;//得分详情
+	private TextView score2 = null;//得分详情
+
 	private TextView replay = null;//再玩一遍
 	private TextView backMenu = null;//返回主菜单
 	private AnimationDrawable ad = null;//游戏结束动画
@@ -79,7 +81,8 @@ public class GameOverActivity extends Activity {
 	}
 	private void doInitView() {
 		this.over = (ImageView) super.findViewById(R.id.over);
-		this.score = (TextView) super.findViewById(R.id.score);
+		this.score1 = (TextView) super.findViewById(R.id.score1);
+		this.score2 = (TextView) super.findViewById(R.id.score2);
 		this.replay = (TextView) super.findViewById(R.id.replay);
 		this.backMenu = (TextView) super.findViewById(R.id.backMenu);
 		this.ad = (AnimationDrawable) this.over.getBackground();
@@ -119,7 +122,7 @@ public class GameOverActivity extends Activity {
 				break;
 			case App.GAMETYPE_THREE:
 				if (time < 60) {
-					end = "看来这儿还不适应你这种弱者！";
+					end = "看来这儿还不适合你这种弱者！";
 				} else if (time > 60 && time <= 120) {
 					end = "挺有潜力的嘛！不过也只能到这了！";
 				} else if (time > 120 && time <= 300) {
@@ -132,26 +135,17 @@ public class GameOverActivity extends Activity {
 				break;
 		}
 
-		this.score.setText(this.getColorSizeString("在", R.color.black,
-				R.dimen.font_size_e));
-		this.score.append(this.getColorSizeBoldString(mode, R.color.redbb,
-				R.dimen.font_size_g));
-		this.score.append(this.getColorSizeString("模式下、你坚持了", R.color.black,
-				R.dimen.font_size_e));
+		StringBuffer buf = new StringBuffer();
+		buf.append("在");
+		buf.append(mode);
+		buf.append("模式下，你坚持了");
+		buf.append(time);
+		buf.append("秒，跳跃了");
+		buf.append(this.passCount);
+		buf.append("条柱子!");
 
-		this.score.append(this.getColorSizeBoldString(String.valueOf(time),
-				R.color.bluebb, R.dimen.font_size_g));
-		this.score.append(this.getColorSizeString("秒、", R.color.black,
-				R.dimen.font_size_e));
-		this.score.append(this.getColorSizeString("跳跃了", R.color.black,
-				R.dimen.font_size_e));
-		this.score.append(this.getColorSizeBoldString(
-				String.valueOf(this.passCount), R.color.bluebb,
-				R.dimen.font_size_g));
-		this.score.append(this.getColorSizeString("条柱子、\n", R.color.black,
-				R.dimen.font_size_e));
-		this.score.append(this.getColorSizeBoldString(end, R.color.bluebb,
-				R.dimen.font_size_g));
+		this.score1.setText(buf.toString());
+		this.score2.setText(end);
 
 	}
 

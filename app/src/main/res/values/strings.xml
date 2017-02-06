@@ -11,5 +11,6 @@
 	<string name="three">地狱级</string>
 	<string name="replay">再来一遍</string>
 	<string name="backMenu">返回主菜单</string>
-	<string name="exit">退出</string>
+
+	<string name="copyRight">©%1$s ThinkBear</string>
 </resources>
