@@ -1,7 +1,7 @@
 # XiaoXiongRunning
 一款android原生态游戏，通过点击屏幕，跳跃柱子，直到碰到柱子，游戏结束
 <br>
-[点击下载APK安装包](http://pan.baidu.com/s/1nuYz5)
+[点击下载APK安装包](http://pan.baidu.com/s/1dEDHgY1)
 <br>
 
 ## 图片示例
